@@ -34,6 +34,17 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  'POST /validarFirma': {
+    controller: "pedroController", action:"validarFirma"
+
+  },
+  'GET /status' : {
+    controller: "pedroController", action:"status"
+  },
+  'GET /texto': {
+    controller: "pedroController", action: "texto"
   }
 
   /***************************************************************************
